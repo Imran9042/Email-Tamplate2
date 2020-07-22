@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="./images/room_reservation.png" alt="" class="logo">
+            <div class="social">
+                <div class="social-icon">
+                    <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="reserve-info">
+            <p class="confirmation">Your reservation is confirmed.</p>
+            <p id="time"></p>
+        </div>
+    </div>
+
+
+    <!--Date Formatting-->
+    <script>
+        var time = document.getElementById('time')
+        var date = Date()
+        time.innerHTML = date.toString()
+    </script>
+</body>
+
+</html>
